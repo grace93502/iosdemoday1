@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SF Mania</title>
+    <style type="text/css">
+        .header ul{
+            list-style-type: none;
+            border: 1px solid lightgrey;
+            background: #ffffff;
+            overflow: auto;
+            margin: 0;
+            padding: 0;
+        }
+        .header li{
+            float: left;
+        }
+        .header li > a{
+            display: inline-block;
+            text-align: center;
+            color: #242c42;
+            text-decoration: none;
+            padding: 14px 16px;
+        }
+        .header li > a.active {
+            color: white;
+            background-color: skyblue;
+        }
+        .header li > a:hover:not(.active){
+            background-color: lightgreen;
+        }
+        .header .dropdown_content{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 2;
+        }
+        .header .dropdown:hover .dropdown_content{
+            display: block;
+        }
+        .header .dropdown_content > a{
+            color: black;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            padding: 12px 16px;
+        }
+        .header .dropdown_content > a:hover {
+            background-color: lightseagreen;
+            color: white;
+        }
+    </style>
+</head>
+<body> <!-- div 자동완성하기, 공간을 header, content, footer로 삼분할하기 --> 
+    <div class="header">
+        <!-- 1. 주메뉴 -->
+        <ul>
+            <li><a class-"active" href="index.html"></a></li> 
+            <li class="dropdown">
+                <a class="dropbtn" href="#">MOVIE NEWS</a></li>
+                <!-- 2. 하위 메뉴 -->
+                <div class="dropdown_content">
+                    <a href="#">BOX OFFICE</a>
+                    <a href="#">REVIEW</a>
+                </div>
+        </ul>
+    </div>
+    <div class="content">
+
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+</html>
